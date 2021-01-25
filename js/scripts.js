@@ -56,8 +56,11 @@
         preload: [0, 1]
       },
       image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-      }
+        verticalFit: true,
+        titleSrc: function(item) {
+          return item.el.attr('title') + ' &middot;  <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Descargar brochure</a>';
+        }
+      },
     });
   
     $('#GalEquMed').magnificPopup({
@@ -71,8 +74,11 @@
         preload: [0, 1]
       },
       image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-      }
+        verticalFit: true,
+        titleSrc: function(item) {
+          return item.el.attr('title') + ' &middot;  <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Descargar brochure</a>';
+        }
+      },
     });
     
     $('#GalDotHos').magnificPopup({
@@ -86,8 +92,11 @@
         preload: [0, 1]
       },
       image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-      }
+        verticalFit: true,
+        titleSrc: function(item) {
+          return item.el.attr('title') + ' &middot;  <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Descargar brochure</a>';
+        }
+      },
     });
     
     $('#GalMantenimiento').magnificPopup({
@@ -101,8 +110,11 @@
         preload: [0, 1]
       },
       image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-      }
+        verticalFit: true,
+        titleSrc: function(item) {
+          return item.el.attr('title') + ' &middot;  <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Descargar brochure</a>';
+        }
+      },
     });
     
     $('#GalTrauma').magnificPopup({
@@ -116,8 +128,11 @@
         preload: [0, 1]
       },
       image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-      }
+        verticalFit: true,
+        titleSrc: function(item) {
+          return item.el.attr('title') + ' &middot;  <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Descargar brochure</a>';
+        }
+      },
     });
   
   })(jQuery); // End of use strict
